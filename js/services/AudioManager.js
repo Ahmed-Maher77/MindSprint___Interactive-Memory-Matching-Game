@@ -1,10 +1,10 @@
 class AudioManager {
-    bgAudio = new Audio("/files/audio/Sad-Emotional-Piano-Music-Background Music.mp3");
-    successAudio = new Audio("/files/audio/success-sound-effect.mp3");
-    failAudio = new Audio("/files/audio/Fail-sound-effect.mp3");
-    gameOverAudio = new Audio("/files/audio/Game-Over-sound-effect.mp3");
-    winAudio = new Audio("/files/audio/Winning-Sound-Effect.mp3");
-    cardFlipAudio = new Audio("/files/audio/Flip-Card-Sound-Effects.mp3");
+    bgAudio = new Audio("./files/audio/Sad-Emotional-Piano-Music-Background Music.mp3");
+    successAudio = new Audio("./files/audio/success-sound-effect.mp3");
+    failAudio = new Audio("./files/audio/Fail-sound-effect.mp3");
+    gameOverAudio = new Audio("./files/audio/Game-Over-sound-effect.mp3");
+    winAudio = new Audio("./files/audio/Winning-Sound-Effect.mp3");
+    cardFlipAudio = new Audio("./files/audio/Flip-Card-Sound-Effects.mp3");
     canResumeBg = true;
     muted = false;
     bgWasPlayingBeforeMute = false;

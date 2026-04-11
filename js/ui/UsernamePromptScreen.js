@@ -74,7 +74,7 @@ class UsernamePromptScreen {
                 return;
             }
             this.clearError();
-            this.modal.hide();
+            this.hideModalSafely();
             if (this.onSubmit) {
                 this.onSubmit(username);
             }
@@ -82,7 +82,7 @@ class UsernamePromptScreen {
         const cancelButton = this.modalElement.querySelector("#cancel-username-btn");
         cancelButton.addEventListener("click", () => {
             this.clearError();
-            this.modal.hide();
+            this.hideModalSafely();
         });
         this.modalElement.addEventListener("hidden.bs.modal", () => {
             this.clearError();
@@ -103,6 +103,14 @@ class UsernamePromptScreen {
         this.feedbackElement.textContent = "";
         this.feedbackElement.classList.add("d-none");
         this.inputElement.classList.remove("is-invalid");
+    }
+    // Blurs focused modal controls before hiding to avoid aria-hidden focus warnings.
+    hideModalSafely() {
+        const activeElement = document.activeElement;
+        if (activeElement && this.modalElement.contains(activeElement)) {
+            activeElement.blur();
+        }
+        this.modal.hide();
     }
 }
 export default UsernamePromptScreen;

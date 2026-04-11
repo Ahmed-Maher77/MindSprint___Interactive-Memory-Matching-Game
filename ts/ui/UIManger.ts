@@ -45,7 +45,7 @@ class UIManger implements IUIManger {
             frontFace.className = "front-face image-reveal w-100";
 
             const img = document.createElement("img");
-            img.src = `/images/${card.value}`;
+            img.src = `./images/${card.value}`;
             img.alt = card.value.replace(".svg", "");
             frontFace.appendChild(img);
 

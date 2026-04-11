@@ -108,7 +108,7 @@ class UsernamePromptScreen {
             }
 
             this.clearError();
-            this.modal.hide();
+            this.hideModalSafely();
 
             if (this.onSubmit) {
                 this.onSubmit(username);
@@ -120,7 +120,7 @@ class UsernamePromptScreen {
         ) as HTMLButtonElement;
         cancelButton.addEventListener("click", () => {
             this.clearError();
-            this.modal.hide();
+            this.hideModalSafely();
         });
 
         this.modalElement.addEventListener("hidden.bs.modal", () => {
@@ -145,6 +145,16 @@ class UsernamePromptScreen {
         this.feedbackElement.textContent = "";
         this.feedbackElement.classList.add("d-none");
         this.inputElement.classList.remove("is-invalid");
+    }
+
+    // Blurs focused modal controls before hiding to avoid aria-hidden focus warnings.
+    private hideModalSafely(): void {
+        const activeElement = document.activeElement as HTMLElement | null;
+        if (activeElement && this.modalElement.contains(activeElement)) {
+            activeElement.blur();
+        }
+
+        this.modal.hide();
     }
 }
 

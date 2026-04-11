@@ -174,8 +174,9 @@ MindSprint/
 ## 📸 Website Preview (UI Mockup)
 
 <a href="https://ahmed-maher77.github.io/MindSprint___Interactive-Memory-Matching-Game/" title="demo">
-  <img src="uploaded-img-on-github-readme" alt="website preview - Demo - UI Mockup" width="400">
+  <img src="https://github.com/user-attachments/assets/66dc3ff8-3e93-4bf8-ae80-21d7e3bdc57f" alt="website preview - Demo - UI Mockup" width="400">
 </a>
+
 
 ---
 

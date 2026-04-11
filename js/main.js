@@ -12,7 +12,9 @@ const startBtn = document.getElementById("action-btn");
 const programScreen = document.getElementById("program-screen");
 const welcomeMessage = document.getElementById("welcome-message");
 const currentYear = document.getElementById("current-year");
-const cardsContainerWrapper = document.getElementById("cards-container-wrapper");
+const cardsContainerWrapper = document.getElementById(
+    "cards-container-wrapper",
+);
 const muteToggleBtn = document.getElementById("mute-toggle-btn");
 const pauseToggleBtn = document.getElementById("pause-toggle-btn");
 // ============= Event Listeners ================
@@ -25,7 +27,10 @@ const updateMuteButtonState = (isMuted) => {
     }
     muteToggleBtn.classList.toggle("is-muted", isMuted);
     muteToggleBtn.setAttribute("aria-pressed", String(isMuted));
-    muteToggleBtn.setAttribute("aria-label", isMuted ? "Unmute sounds" : "Mute sounds");
+    muteToggleBtn.setAttribute(
+        "aria-label",
+        isMuted ? "Unmute sounds" : "Mute sounds",
+    );
     muteToggleBtn.title = isMuted ? "Unmute sounds" : "Mute sounds";
     muteToggleBtn.innerHTML = isMuted
         ? '<i class="fa-solid fa-volume-xmark"></i>'

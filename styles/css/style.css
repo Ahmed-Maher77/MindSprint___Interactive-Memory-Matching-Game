@@ -848,7 +848,6 @@ body {
   }
 }
 .page-404 {
-  margin-inline: auto;
   --accent: #ff5333;
   --accent-dark: #e4391a;
   --ink: #111111;
@@ -856,6 +855,7 @@ body {
   min-height: 100svh;
   margin: 0;
   padding: 0;
+  margin-inline: auto;
   font-family: "Lobster", sans-serif;
   color: var(--ink);
   background: radial-gradient(circle at 16% 20%, rgba(255, 83, 51, 0.18), transparent 35%), radial-gradient(circle at 85% 84%, rgba(255, 83, 51, 0.2), transparent 38%), linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);

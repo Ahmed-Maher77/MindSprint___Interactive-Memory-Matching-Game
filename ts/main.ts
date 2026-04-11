@@ -2,12 +2,6 @@ import Game from "./game/Game.js";
 import UsernamePromptScreen from "./ui/UsernamePromptScreen.js";
 
 
-// Not Found Page Logic
-const allowedPaths = ["/", "/index.html", "/index.htm"];
-if (!allowedPaths.includes(window.location.pathname.toLowerCase())) {
-    window.location.replace("./404.html");
-}
-
 const game = new Game();
 const usernamePromptScreen = new UsernamePromptScreen();
 

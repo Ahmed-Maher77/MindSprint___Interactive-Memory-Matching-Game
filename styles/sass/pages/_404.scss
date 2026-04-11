@@ -9,7 +9,6 @@ $page-404-background-layers: radial-gradient(
     ), linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
 
 .page-404 {
-    margin-inline: auto;
     --accent: #ff5333;
     --accent-dark: #e4391a;
     --ink: #111111;
@@ -18,6 +17,7 @@ $page-404-background-layers: radial-gradient(
     min-height: 100svh;
     margin: 0;
     padding: 0;
+    margin-inline: auto;
     font-family: "Lobster", sans-serif;
     color: var(--ink);
     background: $page-404-background-layers;

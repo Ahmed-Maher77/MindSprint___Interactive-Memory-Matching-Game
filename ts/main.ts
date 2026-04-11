@@ -1,7 +1,6 @@
 import Game from "./game/Game.js";
 import UsernamePromptScreen from "./ui/UsernamePromptScreen.js";
 
-
 const game = new Game();
 const usernamePromptScreen = new UsernamePromptScreen();
 

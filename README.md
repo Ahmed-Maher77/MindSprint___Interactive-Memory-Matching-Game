@@ -12,7 +12,7 @@ MindSprint is a browser-based memory matching game that challenges players to te
 
 ## 🎥 Demo & Explanation Videos
 
-🎬 Watch on LinkedIn:  []()
+🎬 Watch on LinkedIn:  [Click Here - Post Link](https://www.linkedin.com/posts/ahmed-maher-algohary_typescript-iti-frontenddevelopment-activity-7448988290659262464-arbQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxaYJMBq3vC9su8VPtfe-FziMjGaqcNOsA)
 
 ---
 
